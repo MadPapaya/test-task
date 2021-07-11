@@ -18825,7 +18825,6 @@ function callback() {
         if (days > 31 || days < 0 || isNaN(days)) {
             alert('Choose an interval no more than a month')
         } else if (days <= 31 && days >= 0) {
-            console.log('fdfdf');
             dateArr = [];
             for (let i = 0; i <= days; i++) {
                 dateArr[i] = moment(endDate).subtract(days - i, 'days').format('YYYY-MM-DD');
